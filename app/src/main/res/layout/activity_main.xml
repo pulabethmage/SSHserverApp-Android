@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingTop="10dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:id="@+id/connectstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Connection Status" />
+
+            <TextView
+                android:textColor="#04F513"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:id="@+id/connectstatus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not Connected" />
+
+            <Button
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:background="@drawable/save_settings_button"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:id="@+id/enterbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="SERVER SETTINGS" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/sshtext"
+                style="@style/textviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.appbrewery.androidssh.SshEditText
+                android:visibility="gone"
+                android:id="@+id/command"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/almostblack"
+                android:gravity="top|left"
+                android:imeOptions="actionGo"
+                android:inputType="textMultiLine"
+                android:minLines="10"
+                android:singleLine="true"
+                android:textColor="@color/cybergreen"
+                android:textCursorDrawable="@null" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/sftpbutton"
+                style="@style/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filetransfer" />
+
+            <EditText
+                android:inputType="number"
+                android:padding="15dp"
+                android:background="@drawable/edittext_round_white"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:hint="Enter Time in Minutes"
+                android:id="@+id/timerSettingsEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:padding="15dp"
+                android:background="@drawable/edittext_round_white"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:hint="Enter Folder Name"
+                android:id="@+id/customFolderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:id="@+id/endsessionbutton"
+                style="@style/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End session" />
+
+            <Button
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:background="@drawable/main_buttons"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:id="@+id/customizedBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="START" />
+
+            <Button
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:id="@+id/cameraBtn"
+                style="@style/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TAKE PHOTO 2" />
+
+            <TextureView
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:id="@+id/texture"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_takepicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:text="take_picture" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
